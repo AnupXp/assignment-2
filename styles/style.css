@@ -1,0 +1,111 @@
+/* font style */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+
+/* shared style  */
+body {
+  font-family: "Mulish", sans-serif;
+}
+.main_container {
+  margin-left: 135px;
+  margin-right: 135px;
+}
+/* nav related style */
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 48px;
+}
+
+.icon_section {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon_section img {
+  height: 56px;
+  width: 48px;
+}
+
+.icon_section h3 {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+}
+.icon_section h3 > span {
+  color: #ff5400;
+}
+
+.nav_section {
+  display: flex;
+  gap: 44px;
+}
+
+.nav_section a {
+  text-decoration: none;
+  color: var(--Dark-02, #424247);
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav_section a:first-child {
+  color: #ff5400;
+}
+/* banner section */
+.banner_container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Resources/Images/Group13.png");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.text_container h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  padding-top: 105px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.text_container > p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 25px;
+}
+.input_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 768px;
+  height: 84px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 50px 230px;
+}
+.input_container input,
+select,
+button {
+  width: 174px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: rgba(19, 19, 24, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn {
+  background: #ff5400;
+  color: #fff;
+}
