@@ -11,6 +11,7 @@ body {
 .main_container {
   margin-left: 135px;
   margin-right: 135px;
+  width: 80vw;
 }
 .btn_primary {
   color: #fff;
@@ -174,46 +175,113 @@ ul > li {
   font-weight: 400;
   line-height: 26px;
 }
-.row_one img{
+.row_one img {
   height: 300px;
-  width: 615px;
+  width: 39.2vw;
 }
 .row_one {
   display: flex;
   gap: 25px;
   padding: 50px 0 25px 0;
 }
-.one a>img{
+.one a > img {
   height: 300px;
-  width: 400px;
+  width: 24vw;
 }
-.two a>img{
+.two a > img {
   height: 300px;
-  width: 500px;
+  width: 36vw;
 }
-.three a>img{
+.three a > img {
   height: 300px;
-  width: 305px;
+  width: 16.8vw;
 }
-.row_two{
+.row_two {
   display: flex;
   gap: 25px;
   padding-bottom: 25px;
 }
-.first a>img{
+.first a > img {
   height: 300px;
-  width: 515px;
+  width: 34.6vw;
 }
-.second a>img{
+.second a > img {
   height: 300px;
-  width: 715px;
+  width: 44vw;
 }
-.row_three{
+.row_three {
   display: flex;
   gap: 25px;
   padding-bottom: 25px;
 }
-
+/* services style */
+.why_us > h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.why_us > p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 24px;
+  padding-left: 48px;
+}
+.service_container {
+  display: flex;
+  gap: 28px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+.service_container .hotel {
+  width: 39.6vw;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+.service_container .service {
+  width: 39.6vw;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.price {
+  width: 39.6vw;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  margin-left: 20vw;
+}
+.hotel > img,
+.service > img,
+.price > img {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+.hotel > h3,
+.service > h3,
+.price > h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 32px 0 16px 32px;
+}
+.hotel > p,
+.service > p,
+.price > p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 32px;
+}
 /* media quarry for mobile device */
 @media screen and (max-width: 576px) {
   .main_container {
@@ -261,10 +329,27 @@ ul > li {
   ul > li {
     padding-bottom: 10px;
   }
-  .row_one , .row_two , .row_three{
+  .row_one,
+  .row_two,
+  .row_three,
+  .service_container {
     flex-direction: column;
   }
-  .one a>img , .two a>img , .three a>img ,.row_one a>img , .img_part > img , .first a>img ,.second a>img{
+  .one a > img,
+  .two a > img,
+  .three a > img,
+  .row_one a > img,
+  .img_part > img,
+  .first a > img,
+  .second a > img {
     width: 390px;
+  }
+  .service_container .hotel ,.service_container .service  , .price {
+    width: 390px;
+    height: 320px;
+  }
+  .price {
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
