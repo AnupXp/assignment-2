@@ -1,5 +1,8 @@
 /* font style */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+}
 
 /* shared style  */
 body {
@@ -154,6 +157,63 @@ ul > li {
   line-height: 26px;
   padding-bottom: 30px;
 }
+.img_part > img {
+  margin-bottom: 70px;
+}
+/* main section img related styles */
+.img_container h2 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.img_container p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.row_one img{
+  height: 300px;
+  width: 615px;
+}
+.row_one {
+  display: flex;
+  gap: 25px;
+  padding: 50px 0 25px 0;
+}
+.one a>img{
+  height: 300px;
+  width: 400px;
+}
+.two a>img{
+  height: 300px;
+  width: 500px;
+}
+.three a>img{
+  height: 300px;
+  width: 305px;
+}
+.row_two{
+  display: flex;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+.first a>img{
+  height: 300px;
+  width: 515px;
+}
+.second a>img{
+  height: 300px;
+  width: 715px;
+}
+.row_three{
+  display: flex;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+
 /* media quarry for mobile device */
 @media screen and (max-width: 576px) {
   .main_container {
@@ -170,11 +230,12 @@ ul > li {
     padding-bottom: 20px;
   }
   .text_container h1 {
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 30px;
+    padding-top: 20px;
+    margin: 0 10px;
   }
   .text_container > p {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 0 20px;
   }
   .input_container {
@@ -190,12 +251,6 @@ ul > li {
   button {
     width: 300px;
     height: 52px;
-    border: none;
-    border-radius: 8px;
-    background: #fff;
-    color: rgba(19, 19, 24, 0.5);
-    font-size: 16px;
-    font-weight: 400;
   }
   .mixed_container {
     flex-direction: column;
@@ -206,7 +261,10 @@ ul > li {
   ul > li {
     padding-bottom: 10px;
   }
-  .img_part>img{
-    width: 380px;
+  .row_one , .row_two , .row_three{
+    flex-direction: column;
+  }
+  .one a>img , .two a>img , .three a>img ,.row_one a>img , .img_part > img , .first a>img ,.second a>img{
+    width: 390px;
   }
 }
