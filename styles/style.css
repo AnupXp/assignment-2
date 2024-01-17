@@ -35,9 +35,11 @@ body {
   margin-bottom: 48px;
 }
 
-.icon_section {
+.icon_section,
+.company {
   display: flex;
   gap: 16px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -46,12 +48,14 @@ body {
   width: 48px;
 }
 
-.icon_section h3 {
+.icon_section h3,
+.company h2 {
   color: #131318;
   font-size: 36px;
   font-weight: 800;
 }
-.icon_section h3 > span {
+.icon_section h3 > span,
+.company h2 > span {
   color: #ff5400;
 }
 
@@ -423,6 +427,37 @@ ul > li {
   font-size: 32px;
   font-weight: 800;
 }
+/* footer section */
+.footer_section {
+  background: rgba(19, 19, 24, 0.05);
+  width: 100vw;
+  height: 502px;
+}
+.company {
+  padding-top: 110px;
+}
+.company_para > p {
+  color: #5a5a5d;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 32px;
+}
+.social{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.rights >p{
+  color: #131318;
+font-size: 16px;
+font-weight: 300;
+text-align: center;
+padding-top: 50px;
+}
 /* media quarry for mobile device */
 @media screen and (max-width: 576px) {
   .main_container {
@@ -520,5 +555,12 @@ ul > li {
   .wander_way {
     width: 390px;
     height: 350px;
+  }
+  .company_para > p{
+    width: 287px;
+    padding-left: 44px;
+  }
+  .footer_section {
+    width: 390px;
   }
 }
